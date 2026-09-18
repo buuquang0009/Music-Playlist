@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
 <!-- ===== SIDEBAR ===== -->
 <div class="sidebar">
 
@@ -12,7 +31,7 @@
         <div class="author-credit">
             Lyrics Hong Nguyen <br>
             & <br>
-            Mix Music Qui Huynh
+            AI by Qui Huynh
         </div>
     </div>
 
@@ -63,3 +82,32 @@
     </ul>
 
 </div>
+
+<!-- ===== PLAYER ===== -->
+    <div class="player">
+        <button id="playAllBtn" class="play-all-btn">
+            ▶ Play All
+        </button>
+
+        <h1 id="songTitle">Chọn bài hát</h1>
+
+        <div class="visual-area">
+            <div class="disc-container">
+                <img src="picture/chimen.png" class="decor-bird">
+                <div class="disc" id="disc">
+                    <div class="center"></div>
+                </div>
+            </div>
+            <div id="musicNotes"></div>
+        </div>
+
+        <audio id="audioPlayer" controls></audio>
+        <img src="picture/hoasen3.png" class="decor-image">
+    </div>
+
+<div class="update-label">Last update 09.08.26</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
